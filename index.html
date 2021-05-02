@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a80d83cca0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container1">
+        <!-- clock -->
+        <div class="clockContainer">
+            <div class="clock-outline">
+                <div class="clock-face">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand min-hand"></div>
+                    <div class="hand second-hand"></div>
+                </div>
+            </div>
+            <h1 class="clock"></h1>
+        </div>
+        <!-- input name -->
+        <form class="form">
+            <label for="inputName">what is your name? </label><br>
+            <input id="inputName" type="text" />
+
+        </form>
+        <!-- show name -->
+        <h4 class="showName"></h4>
+    </section>
+    <section class="container2">
+        <form class="todo_form" action="">
+            TODO-LIST :
+            <input class="input_todo" type="text">
+        </form>
+        <div class="toDoList">
+            <div class="pending">
+                <h2>pending</h2>
+                <ul class="pending_items"></ul>
+            </div>
+            <div class="finished">
+                <h2>finished</h2>
+                <ul class="finished_items"></ul>
+            </div>
+        </div>
+        <div class="weather_container">
+            <div class="weather">
+            </div>
+        </div>
+    </section>
+
+    <script src="clock.js"></script>
+    <script src="gretting.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+    <script src="bg.js"></script>
+</body>
+
+</html>
