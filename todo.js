@@ -47,6 +47,7 @@ function delText(e) {
   li.parentNode.removeChild(li);
   removeFinished(li.id);
   removePending(li.id);
+  save();
 }
 
 function handleFinishClick(e) {
@@ -119,6 +120,9 @@ function restore() {
 
 function handleSubmit(e) {
   e.preventDefault();
+  if (inputToDo.value === "") {
+    return alert("할일을 입력해주세요 제발!!!!!!!!!!!");
+  }
   textObj = getTextObj(inputToDo.value);
   inputToDo.value = "";
   paintPending(textObj);
